@@ -182,10 +182,24 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
+LANGUAGE_CODE = 'fa-ir'
 
-LANGUAGE_CODE = 'en-us'
+
+LANGUAGES = [
+    ('fa', 'persian'),
+    ('en', 'English'),
+
+]
+# LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')];
+
+
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR, "locale"),
+    os.path.join(BASE_DIR, "frobshop/locale"),
+]
 
 TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Tehran'
 
 USE_I18N = True
 
